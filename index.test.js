@@ -8,10 +8,28 @@ describe("FizzBuzz", () => {
         //given
         let number=0
         //when
-        let reponse=fizz_buzz(0)
+        let fizzBuzz=fizz_buzz(number)
 
         //then
-        expect(reponse).toBe("");
+        expect(fizzBuzz).toBe("");
+    });
+    test('should return Fizz if the result is 3', () => {
+        //given
+        let number=3
+        //when
+        let fizzBuzz=fizz_buzz(number)
+
+        //then
+        expect(fizzBuzz).toBe("Fizz");
+    });
+    test('should return Buzzz if the result is 5', () => {
+        //given
+        let number=5
+        //when
+        let fizzBuzz=fizz_buzz(number)
+
+        //then
+        expect(fizzBuzz).toBe("Buzz");
     });
 
 });
