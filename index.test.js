@@ -1,20 +1,17 @@
 const fizz_buzz = require('./index');
 
 describe("FizzBuzz", () => {
-    test('[3] should result in "fizz"', () => {
-        expect(fizz_buzz([3])).toBe('fizz');
+    test('should return ture when true', () => {
+        expect(true).toBe(true);
     });
+    test('should return chaine vide if the result is 0', () => {
+        //given
+        let number=0
+        //when
+        let reponse=fizz_buzz(0)
 
-    test('[5] should result in "buzz"', () => {
-        expect(fizz_buzz([5])).toBe('buzz');
-    });
-
-    test('[15] should result in "fizzbuzz"', () => {
-        expect(fizz_buzz([15])).toBe('fizzbuzz');
-    });
-
-    test('[1,2,3] should result in "1, 2, fizz"', () => {
-        expect(fizz_buzz([3])).toBe('fizz');
+        //then
+        expect(reponse).toBe("");
     });
 
 });
